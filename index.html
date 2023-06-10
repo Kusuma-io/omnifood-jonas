@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Omnifood</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./content/img/omnifood-logo.png"
+        alt="Omnifood Logo"
+        class="logo"
+      />
+      <nav class="main-nav">Navigation</nav>
+    </header>
+    <main>
+      <!-- kenapa setelah section dibikin container lagi yaitu div hero ? kenapa gak langsung aja ?
+        - soalnya kita mau bikin heronya itu punya lebar maks, punya size sendiri lah, trus nanti section itu ya cuma wadahnya wadah gitu aja, jadi tempat color background gitu aja. -->
+      <!-- kalau emang biar ada size gitu, kenapa gak sectionnya  dikasi padding kanan kiri aja ?
+        - ntar dicoba, bisa gak kira2, soalnya nanti pas screensize   kecilan malah ancur -->
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              A healthy meal delivered to your door, every single day
+            </h1>
+            <p class="hero-description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+            <!-- mau kasi space diantara 2 button, caranya ada 2,
+            1. dimasukan container trus jadiin flexbox
+            2. tambahin class khusus untuk tambah margin aja
+               kenapa tambahin class baru ? kalau kasi margin di class btn, nanti kalau ada btn baru ikut kena margin juga -->
+            <a href="#" class="btn btn-primary margin-right-sm"
+              >Start eating well</a
+            >
+            <a href="#" class="btn btn-secondary">Learn more &darr;</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img
+                  src="./content/img/customers/customer-1.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./content/img/customers/customer-2.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./content/img/customers/customer-3.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./content/img/customers/customer-4.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./content/img/customers/customer-5.jpg"
+                  alt="customer photo"
+                />
+                <img
+                  src="./content/img/customers/customer-6.jpg"
+                  alt="customer photo"
+                />
+              </div>
+              <p class="delivered-text">
+                <span>250,000+</span> meals delivered last year!
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-img-box">
+            <img
+              src="content/img/hero.png"
+              class="hero-img"
+              alt="woman enjoying foods, meals in storage container, and food bowls on a table"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
