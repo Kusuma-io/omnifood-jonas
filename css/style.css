@@ -23,7 +23,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 .main-nav-link:visited,
@@ -138,10 +138,9 @@
 /* ************************************* */
 .section-how {
   padding: 9.6rem 0;
-  background-color: ;
 }
 .step-number {
-  font-size: 9rem;
+  font-size: 8.6rem;
   margin-bottom: 1.6rem;
   font-weight: 600;
   color: #ddd;
@@ -150,10 +149,41 @@
   font-size: 1.8rem;
   line-height: 1.8;
 }
-.step-img {
-  width: 50%; /*make it so the size will take xxx% of its parent */
-}
 .step-img-box {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+
+  /* positioned it in the middle */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* making it round */
+  border-radius: 50%;
+}
+
+.step-img-box::before {
+  width: 60%;
+  /* height: 60%; it doesnt work, it will become 0 */
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+.step-img-box::after {
+  width: 45%;
+  padding: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+.step-img {
+  width: 35%; /*make it so the size will take xxx% of its parent */
 }
