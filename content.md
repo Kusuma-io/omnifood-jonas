@@ -42,7 +42,8 @@ Vegan
 Pescatarian
 Gluten-free
 Lactose-free
-Keto
+KetoLactose-free
+
 Paleo
 Low FODMAP
 Kid-friendly
