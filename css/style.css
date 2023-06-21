@@ -198,6 +198,10 @@
   border-radius: 11px;
   overflow: hidden;
   box-shadow: 0px 6rem 2rem 0px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+.meal:hover {
+  transform: translateY(-1.2rem);
 }
 .meal-tags {
   margin-bottom: 1.2rem;
@@ -213,20 +217,27 @@
 .meal img {
   width: 100%;
 }
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
 .meal-infos {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+.meal-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+}
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
-.meal-infos {
-  list-style: none;
-  font-size: 1.8rem;
-  line-height: 1.8;
-}
+
 .tag--vegan {
   background-color: #94d82d;
 }
@@ -244,7 +255,15 @@
   gap: 1.6rem;
 }
 .list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
   font-size: 1.8rem;
+}
+.list-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
 }
 .all-recipes {
   font-size: 1.8rem;
@@ -262,5 +281,5 @@
 .link:hover,
 .link:active {
   color: #cf711f;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid transparent;
 }
