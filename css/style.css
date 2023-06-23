@@ -283,3 +283,25 @@
   color: #cf711f;
   border-bottom: 1px solid transparent;
 }
+
+/* ************************************* */
+/* * TESTIMONIALS*/
+/* ************************************* */
+.section-testimonials {
+  background-color: #fdf2e9;
+  align-items: center;
+}
+.testimonials-container {
+  padding: 9.6rem;
+}
+.gallery {
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery img {
+  display: block;
+  width: 100%;
+}
+.gallery-item {
+  overflow: hidden;
+}
