@@ -289,7 +289,6 @@
 /* ************************************* */
 .section-testimonials {
   background-color: #fdf2e9;
-  align-items: center;
 }
 .testimonials-container {
   padding: 9.6rem;
@@ -299,9 +298,5 @@
   padding: 1.6rem;
 }
 .gallery img {
-  display: block;
   width: 100%;
-}
-.gallery-item {
-  overflow: hidden;
 }
