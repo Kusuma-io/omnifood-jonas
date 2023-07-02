@@ -248,23 +248,6 @@
   background-color: #ffd43b;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.list-item {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  font-size: 1.8rem;
-}
-.list-icon {
-  height: 2.4rem;
-  width: 2.4rem;
-  color: #e67e22;
-}
 .all-recipes {
   font-size: 1.8rem;
   text-align: center;
@@ -332,4 +315,10 @@
 }
 .gallery-item img:hover {
   transform: scale(110%);
+}
+/* ************************************* */
+/* * PRICING */
+/* ************************************* */
+.section-pricing {
+  padding: 9.6rem 0;
 }
