@@ -323,10 +323,18 @@
   padding: 9.6rem 0;
 }
 .pricing-plan {
-  background-color: #fae5d3;
-  padding: 4.8rem;
   border-radius: 25px;
   box-shadow: 0px 6rem 2rem 0px rgba(0, 0, 0, 0.05);
+  width: 75%;
+}
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
 }
 .plan-header {
   text-align: center;
